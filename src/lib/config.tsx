@@ -6,7 +6,7 @@ import { RiInstagramFill } from "react-icons/ri";
 export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
-  name: "acme.ai",
+  name: "needle-ai",
   description: "Automate your workflow with AI",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
   keywords: ["SaaS", "Template", "Next.js", "React", "Tailwind CSS"],
@@ -16,6 +16,12 @@ export const siteConfig = {
     discord: "https://discord.gg/87p2vpsat5",
     github: "https://github.com/magicuidesign/magicui",
     instagram: "https://instagram.com/magicuidesign/",
+  },
+  copywrite: {
+    mainText: "Find Your Perfect Job with AI-Powered Matching",
+    subText:
+      "Break free from tedious job searches. Let our AI connect you instantly with opportunities that truly fit your skills and ambitions.",
+    cta: "Join the Future of Hiring",
   },
   header: [
     {
@@ -144,54 +150,52 @@ export const siteConfig = {
   ],
   faqs: [
     {
-      question: "What is acme.ai?",
+      question: "Q: Why are you called needle.",
       answer: (
         <span>
-          acme.ai is a platform that helps you build and manage your AI-powered
-          applications. It provides tools and services to streamline the
-          development and deployment of AI solutions.
+          Finding the right job is like finding a needle in a haystack. We help
+          you find that needle.
         </span>
       ),
     },
     {
-      question: "How can I get started with acme.ai?",
+      question: "Q: How does the AI matching work?",
       answer: (
         <span>
-          You can get started with acme.ai by signing up for an account on our
-          website, creating a new project, and following our quick-start guide.
-          We also offer tutorials and documentation to help you along the way.
+          Our AI algorithms analyze multiple data points from your profile to
+          match you with roles that suit your skills and preferences.
         </span>
       ),
     },
     {
-      question: "What types of AI models does acme.ai support?",
+      question: "Q: Is my information secure?",
       answer: (
         <span>
-          acme.ai supports a wide range of AI models, including but not limited
-          to natural language processing, computer vision, and predictive
-          analytics. We continuously update our platform to support the latest
-          AI technologies.
+          Absolutely. We prioritize your privacy and use advanced security
+          protocols to protect your data. You choose with which companies you
+          want to share your data
         </span>
       ),
     },
     {
-      question: "Is acme.ai suitable for beginners in AI development?",
+      question: "Q: Can I use the platform while employed?",
       answer: (
         <span>
-          Yes, acme.ai is designed to be user-friendly for both beginners and
-          experienced developers. We offer intuitive interfaces, pre-built
-          templates, and extensive learning resources to help users of all skill
-          levels create AI-powered applications.
+          Yes, your job search remains confidential. We do not share your
+          information without your consent.
         </span>
       ),
     },
     {
-      question: "What kind of support does acme.ai provide?",
+      question: "Q: Why is this free? How do you plan to make money?",
       answer: (
         <span>
-          acme.ai provides comprehensive support including documentation, video
-          tutorials, a community forum, and dedicated customer support. We also
-          offer premium support plans for enterprises with more complex needs.
+          Our platform is completely free for candidates because we believe you
+          shouldn't have to pay to find your ideal job. We make money by
+          charging companies a fee only when they successfully hire a candidate
+          through our platform. This success-based model aligns our interests
+          with both you and the employers—we're motivated to help you find the
+          perfect fit, and companies only pay when they gain valuable talent.
         </span>
       ),
     },

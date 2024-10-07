@@ -28,7 +28,7 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          "min-h-screen bg-background antialiased w-full mx-auto scroll-smooth"
+          "mx-auto min-h-screen w-full scroll-smooth bg-background antialiased",
         )}
       >
         <ThemeProvider

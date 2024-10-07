@@ -20,7 +20,7 @@ export default function FAQ() {
             <AccordionItem
               key={idx}
               value={faq.question}
-              className="w-full border rounded-lg overflow-hidden"
+              className="w-full overflow-hidden rounded-lg border"
             >
               <AccordionTrigger className="px-4">
                 {faq.question}
@@ -30,12 +30,12 @@ export default function FAQ() {
           ))}
         </Accordion>
       </div>
-      <h4 className="mb-12 text-center text-sm font-medium tracking-tight text-foreground/80">
+      {/* <h4 className="mb-12 text-center text-sm font-medium tracking-tight text-foreground/80">
         Still have questions? Email us at{" "}
         <a href={`mailto:${siteConfig.links.email}`} className="underline">
           {siteConfig.links.email}
         </a>
-      </h4>
+      </h4> */}
     </Section>
   );
 }

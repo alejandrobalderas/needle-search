@@ -3,7 +3,7 @@
 import Drawer from "@/components/drawer";
 import { Icons } from "@/components/icons";
 import Menu from "@/components/menu";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -47,7 +47,8 @@ export default function Header() {
         <div className="hidden lg:block">
           <div className="flex items-center ">
             <nav className="mr-10">
-              <Menu />
+              {/* <Menu /> */}
+              <Button variant={"ghost"}>Blog</Button>
             </nav>
 
             <div className="gap-2 flex">
@@ -65,7 +66,7 @@ export default function Header() {
                 )}
               >
                 <Icons.logo className="h-6 w-6" />
-                Get Started for Free
+                {siteConfig.copywrite.cta}
               </Link>
             </div>
           </div>

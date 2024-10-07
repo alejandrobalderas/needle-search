@@ -5,27 +5,26 @@ import { Sparkles, Upload, Zap } from "lucide-react";
 const data = [
   {
     id: 1,
-    title: "1. Upload Your Data",
-    content:
-      "Simply upload your data to our secure platform. We support various file formats and data types to ensure a seamless integration with your existing systems.",
-    image: "/dashboard.png",
-    icon: <Upload className="w-6 h-6 text-primary" />,
+    title: "1. Sign Up",
+    content: "Create your account in seconds using your email or LinkedIn.",
+    // image: "/dashboard.png",
+    icon: <Upload className="h-6 w-6 text-primary" />,
   },
   {
     id: 2,
-    title: "2. Click Start",
+    title: "2. Complete Your Profile",
     content:
-      "Our advanced AI algorithms automatically process and analyze your data, extracting valuable insights and patterns that would be difficult to identify manually.",
-    image: "/dashboard.png",
-    icon: <Zap className="w-6 h-6 text-primary" />,
+      "Tell us about your skills, experience, and career goals. Set your preferences for salary, company culture, and values.",
+    // image: "/dashboard.png",
+    icon: <Zap className="h-6 w-6 text-primary" />,
   },
   {
     id: 3,
-    title: "3. Get Actionable Insights",
+    title: "3. Get Matched and Connect",
     content:
-      "Receive clear, actionable insights and recommendations based on the AI analysis. Use these insights to make data-driven decisions and improve your business strategies.",
-    image: "/dashboard.png",
-    icon: <Sparkles className="w-6 h-6 text-primary" />,
+      "Receive instant AI-powered job matches tailored to you. Connect directly with hiring managers to schedule interviews.",
+    // image: "/dashboard.png",
+    icon: <Sparkles className="h-6 w-6 text-primary" />,
   },
 ];
 

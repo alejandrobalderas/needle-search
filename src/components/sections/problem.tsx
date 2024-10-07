@@ -1,25 +1,25 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import Section from "@/components/section";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Brain, Shield, Zap } from "lucide-react";
 
 const problems = [
   {
-    title: "Data Overload",
+    title: "Lengthy and Inefficient Hiring Processes",
     description:
-      "Businesses struggle to make sense of vast amounts of complex data, missing out on valuable insights that could drive growth and innovation.",
+      "Are you frustrated with lengthy hiring processes that drag on for weeks or even months? Tired of attending multiple rounds of interviews, answering the same questions over and over? Traditional recruitment wastes your valuable time and keeps you from seizing the opportunities you deserve.",
     icon: Brain,
   },
   {
-    title: "Slow Decision-Making",
+    title: "Impersonal Matches and Poor Fit",
     description:
-      "Traditional data processing methods are too slow, causing businesses to lag behind market changes and miss crucial opportunities.",
+      "Do you feel like job offers don't truly align with your skills, values, or career aspirations? When recruiters focus only on your resume or LinkedIn profile, they miss what matters most to you—like your salary expectations, desired impact, collaboration style, and personal goals. This leads to mismatched roles that leave you unsatisfied and unfulfilled.",
     icon: Zap,
   },
   {
-    title: "Data Security Concerns",
+    title: "Lack of Control Over Your Personal Data",
     description:
-      "With increasing cyber threats, businesses worry about the safety of their sensitive information when adopting new technologies.",
+      "Worried about who has access to your personal information? In traditional hiring processes, you often have little control over how your data is shared. Your details might be passed around without your consent, raising concerns about privacy and making you hesitant to engage fully in your job search.",
     icon: Shield,
   },
 ];
@@ -28,17 +28,18 @@ export default function Component() {
   return (
     <Section
       title="Problem"
-      subtitle="Manually entering your data is a hassle."
+      subtitle="Current Tech Recruiting is 💩"
+      description="And we all know it"
     >
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+      <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
         {problems.map((problem, index) => (
           <BlurFade key={index} delay={0.2 + index * 0.2} inView>
-            <Card className="bg-background border-none shadow-none">
-              <CardContent className="p-6 space-y-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <problem.icon className="w-6 h-6 text-primary" />
+            <Card className="border-none bg-background shadow-none">
+              <CardContent className="space-y-4 p-6">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                  <problem.icon className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold">{problem.title}</h3>
+                <h3 className="h-14 text-xl font-semibold">{problem.title}</h3>
                 <p className="text-muted-foreground">{problem.description}</p>
               </CardContent>
             </Card>
