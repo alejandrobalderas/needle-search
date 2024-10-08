@@ -31,15 +31,15 @@ export default function RootLayout({
           "mx-auto min-h-screen w-full scroll-smooth bg-background antialiased",
         )}
       >
-        <ThemeProvider
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem={false}
-        >
-          {children}
-          <ThemeToggle />
+        > */}
+        {children}
+        {/* <ThemeToggle />
           <TailwindIndicator />
-        </ThemeProvider>
+        </ThemeProvider> */}
       </body>
     </html>
   );
