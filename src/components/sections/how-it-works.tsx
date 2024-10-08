@@ -7,7 +7,7 @@ const data = [
     id: 1,
     title: "1. Sign Up",
     content: "Create your account in seconds using your email or LinkedIn.",
-    // image: "/dashboard.png",
+    image: "/needle-login.png",
     icon: <Upload className="h-6 w-6 text-primary" />,
   },
   {
@@ -15,7 +15,7 @@ const data = [
     title: "2. Complete Your Profile",
     content:
       "Tell us about your skills, experience, and career goals. Set your preferences for salary, company culture, and values.",
-    // image: "/dashboard.png",
+    image: "/needle-job-search.png",
     icon: <Zap className="h-6 w-6 text-primary" />,
   },
   {
@@ -23,7 +23,7 @@ const data = [
     title: "3. Get Matched and Connect",
     content:
       "Receive instant AI-powered job matches tailored to you. Connect directly with hiring managers to schedule interviews.",
-    // image: "/dashboard.png",
+    image: "/needle-job-search.png",
     icon: <Sparkles className="h-6 w-6 text-primary" />,
   },
 ];

@@ -2,13 +2,10 @@
 
 import { motion } from "framer-motion";
 
-import { Icons } from "@/components/icons";
-import HeroVideoDialog from "@/components/magicui/hero-video";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
 import { siteConfig } from "@/lib/config";
+import Image from "next/image";
 import CTAButton from "../cta-button";
+import { BorderBeam } from "../magicui/border-beam";
 
 const ease = [0.16, 1, 0.3, 1];
 
@@ -113,22 +110,56 @@ function HeroCTA() {
   );
 }
 
+// function HeroImage() {
+//   // const ref = useRef(null);
+//   // const inView = useInView(ref, { once: true, margin: "-100px" });
+//   return (
+//     <div
+//       // ref={ref}
+//       className="animate-fade-up relative mt-[8rem] opacity-0 [--animation-delay:400ms] [perspective:2000px] after:absolute after:inset-0 after:z-50 after:[background:linear-gradient(to_top,hsl(var(--background))_30%,transparent)]"
+//     >
+//       <div
+//         className={`rounded-xl border border-white/10 bg-white bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:h-full before:w-full before:opacity-0 before:[background-image:linear-gradient(to_bottom,var(--color-one),var(--color-one),transparent_40%)] before:[filter:blur(180px)] ${
+//           ""
+//           // inView ? "before:animate-image-glow" : ""
+//         }`}
+//       >
+//         <BorderBeam
+//           size={200}
+//           duration={12}
+//           delay={11}
+//           colorFrom="var(--color-one)"
+//           colorTo="var(--color-two)"
+//         />
+//         <div className="">Hello</div>
+//         <img
+//           src="/hero-light.png"
+//           alt="Hero Image"
+//           className="relative block h-full w-full rounded-[inherit] border object-contain dark:hidden"
+//         />
+//       </div>
+//     </div>
+//   );
+// }
+
 function HeroImage() {
   return (
-    <motion.div
-      className="relative mx-auto flex w-full items-center justify-center"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 1.2, duration: 1, ease }}
-    >
-      <HeroVideoDialog
-        animationStyle="from-center"
-        videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-        thumbnailSrc="/dashboard.png"
-        thumbnailAlt="Hero Video"
-        className="mt-16 max-w-screen-lg rounded-lg border shadow-lg"
+    <div className="mt-4 rounded-lg text-black">
+      <BorderBeam
+        size={200}
+        duration={12}
+        delay={11}
+        colorFrom="var(--color-one)"
+        colorTo="var(--color-two)"
       />
-    </motion.div>
+      <Image
+        className="rounded-lg"
+        src={"/needle-job-search.png"}
+        alt="Hero Image"
+        width={800}
+        height={800}
+      />
+    </div>
   );
 }
 
@@ -139,8 +170,8 @@ export default function Hero() {
         <HeroPill />
         <HeroTitles />
         <HeroCTA />
-        {/* <HeroImage /> */}
-        {/* <div className="pointer-events-none absolute inset-x-0 -bottom-20 h-1/3 bg-gradient-to-t from-background via-background to-transparent lg:h-1/4"></div> */}
+        <HeroImage />
+        <div className="pointer-events-none absolute inset-x-0 -bottom-20 h-1/3 bg-gradient-to-t from-background via-background to-transparent lg:h-1/4"></div>
       </div>
     </section>
   );
