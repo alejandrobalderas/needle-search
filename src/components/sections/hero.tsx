@@ -8,6 +8,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { siteConfig } from "@/lib/config";
+import CTAButton from "../cta-button";
 
 const ease = [0.16, 1, 0.3, 1];
 
@@ -23,7 +24,7 @@ function HeroPill() {
       transition={{ duration: 0.8, ease }}
     >
       <p className="text-xs font-medium text-primary sm:text-sm">
-        ✨ For Techies From Techies
+        ✨ We are not recruiters, we are techies solving problems with tech
       </p>
       <svg
         width="12"
@@ -98,16 +99,7 @@ function HeroCTA() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.8, ease }}
       >
-        <Link
-          href="/signup"
-          className={cn(
-            buttonVariants({ variant: "default" }),
-            "flex w-full gap-2 text-background sm:w-auto",
-          )}
-        >
-          <Icons.logo className="h-6 w-6" />
-          {copywrite.cta}
-        </Link>
+        <CTAButton showWaitingListModal={true} />
       </motion.div>
       <motion.p
         className="mt-5 text-sm text-muted-foreground"
