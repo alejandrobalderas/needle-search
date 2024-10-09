@@ -3,6 +3,8 @@
 *dev*
 *tmp*
 
+.env
+
 # dependencies
 /node_modules
 /.pnp

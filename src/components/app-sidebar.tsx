@@ -1,39 +1,24 @@
 "use client";
 
 import {
-  Atom,
-  Bird,
-  BookOpen,
-  Bot,
-  Code2,
-  Eclipse,
-  Frame,
-  History,
-  LifeBuoy,
-  Map,
-  PieChart,
-  Rabbit,
-  Send,
-  Settings2,
-  SquareTerminal,
-  Star,
-  Turtle,
-  Briefcase,
-  User,
-  FileText,
   BarChart,
   Bell,
-  Settings,
+  Briefcase,
+  FileText,
+  Frame,
   HelpCircle,
+  Map,
   MessageSquare,
+  PieChart,
+  Settings,
+  SquareTerminal,
+  User,
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
-import { NavProjects } from "@/components/nav-projects";
 import { NavSecondary } from "@/components/nav-secondary";
 import { NavUser } from "@/components/nav-user";
 import { StorageCard } from "@/components/storage-card";
-import { TeamSwitcher } from "@/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
@@ -72,7 +57,7 @@ const data = {
         },
         {
           title: "Liked Jobs",
-          url: "#",
+          url: "/liked-jobs",
           isActive: false,
         },
       ],
@@ -124,7 +109,6 @@ const data = {
       items: [],
     },
   ],
-
   navSecondary: [
     {
       title: "Notifications",
