@@ -1,4 +1,4 @@
-import OnboardingPersonalInformationForm from "@/components/beta-testers/onboarding/onboarding-personal-information-form";
+import OnboardingFlow from "@/components/beta-testers/onboarding/onboarding-flow";
 import { db } from "@/lib/db";
 import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
@@ -24,9 +24,9 @@ const OnboardingPage = async () => {
   }
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <div className="flex h-screen w-screen flex-col items-center justify-center gap-y-12">
       Welcome to the onboarding {user?.firstName}
-      <OnboardingPersonalInformationForm />
+      <OnboardingFlow />
     </div>
   );
 };
