@@ -1,12 +1,11 @@
 "use client";
-import { Search, Send, SendHorizonal } from "lucide-react";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
-import { Icons } from "../icons";
-import { Textarea } from "../ui/textarea";
+import { Card, CardContent } from "@/components/ui/card";
+import { Search, SendHorizonal } from "lucide-react";
 import { useRouter } from "next/navigation";
+import SiteLogo from "../site-logo";
+import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
+import { Textarea } from "../ui/textarea";
 
 const AISearchModal = ({
   open,
@@ -21,10 +20,9 @@ const AISearchModal = ({
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="w-[800px] max-w-6xl">
         <div className="flex flex-col items-center p-4">
-          {/* <div className=" w-full max-w-7xl"> */}
           <div className="flex flex-col gap-y-4">
             {/* Logo */}
-            <Icons.siteIcon className="" />
+            <SiteLogo />
 
             {/* Search Input */}
             <div className="relative mb-8">

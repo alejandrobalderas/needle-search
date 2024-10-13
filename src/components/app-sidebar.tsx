@@ -27,7 +27,7 @@ import {
   SidebarItem,
   SidebarLabel,
 } from "@/components/ui/sidebar";
-import { Icons } from "./icons";
+import SiteLogo from "./site-logo";
 const data = {
   user: {
     name: "Alejandro Balderas",
@@ -187,8 +187,7 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarHeader>
         {/* <TeamSwitcher teams={data.teams} /> */}
-
-        <Icons.siteIcon />
+        <SiteLogo />
       </SidebarHeader>
       <SidebarContent>
         <SidebarItem>

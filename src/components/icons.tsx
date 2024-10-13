@@ -1,17 +1,12 @@
-import { siteConfig } from "@/lib/config";
 import { Syringe } from "lucide-react";
 import { SVGProps } from "react";
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 
+const Logo = Syringe;
+
 export const Icons = {
-  siteIcon: (props: IconProps) => (
-    <div className="flex flex-row gap-x-2">
-      <Icons.logo className="h-[40px] w-auto" />
-      <span className="text-xl font-bold">{siteConfig.name}</span>
-    </div>
-  ),
-  logo: (props: IconProps) => <Syringe />,
+  logo: (props: IconProps) => <Logo />,
   twitter: (props: IconProps) => (
     <svg
       {...props}
