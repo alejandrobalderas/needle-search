@@ -1,4 +1,4 @@
-import JobSwipeCards from "@/components/job-cards/JobSwipeCards";
+import JobSwipeCards from "@/components/job-cards/job-swipe-cards";
 import React from "react";
 
 const ExploreJobsPage = () => {
