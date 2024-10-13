@@ -8,15 +8,15 @@ export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
   name: "needle-ai",
-  description: "Automate your workflow with AI",
+  description: "Page Description",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
-  keywords: ["SaaS", "Template", "Next.js", "React", "Tailwind CSS"],
+  keywords: ["List of keywords here"],
   links: {
     email: "support@needle-search.ai",
-    twitter: "https://twitter.com/magicuidesign",
-    discord: "https://discord.gg/87p2vpsat5",
-    github: "https://github.com/magicuidesign/magicui",
-    instagram: "https://instagram.com/magicuidesign/",
+    twitter: "#",
+    discord: "#",
+    github: "#",
+    instagram: "#",
   },
   copyWrite: {
     hero: {
