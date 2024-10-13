@@ -1,4 +1,4 @@
-import JobCard from "@/components/job-card";
+import JobCard from "@/components/job-cards/job-card";
 import React from "react";
 
 const jobCardData = [
