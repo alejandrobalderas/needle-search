@@ -30,7 +30,8 @@ const CTAButton = ({
 }: {
   showWaitingListModal?: boolean;
 }) => {
-  return showWaitingListModal ? <CTAModal /> : <CTAButtonLink />;
+  // return showWaitingListModal ? <CTAModal /> : <CTAButtonLink />;
+  return <CTAButtonLink />;
 };
 
 const CTAModal = () => {
@@ -42,7 +43,7 @@ const CTAModal = () => {
           className="flex w-full gap-2 text-background sm:w-auto"
         >
           <Icons.logo className="h-6 w-6" />
-          {siteConfig.copywrite.cta}
+          {siteConfig.copyWrite.cta}
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[525px]">
@@ -71,14 +72,14 @@ const CTAButtonLink = () => {
   return (
     <div>
       <Link
-        href="/signup"
+        href="/sign-up"
         className={cn(
           buttonVariants({ variant: "default" }),
           "flex w-full gap-2 text-background sm:w-auto",
         )}
       >
         <Icons.logo className="h-6 w-6" />
-        {siteConfig.copywrite.cta}
+        {siteConfig.copyWrite.cta}
       </Link>
     </div>
   );

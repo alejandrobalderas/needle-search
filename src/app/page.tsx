@@ -22,8 +22,8 @@ export default function Home() {
       <Problem />
       <Solution />
       <HowItWorks />
-      {/* <TestimonialsCarousel /> */}
-      {/* <Features />
+      {/* <TestimonialsCarousel />
+      <Features />
       <Testimonials />
       <Pricing /> */}
       <FAQ />

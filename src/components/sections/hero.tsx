@@ -9,7 +9,7 @@ import { BorderBeam } from "../magicui/border-beam";
 
 const ease = [0.16, 1, 0.3, 1];
 
-const copywrite = siteConfig.copywrite;
+const { mainText, subText } = siteConfig.copyWrite.hero;
 
 function HeroPill() {
   return (
@@ -41,7 +41,7 @@ function HeroPill() {
 }
 
 function HeroTitles() {
-  const mainTextArray = copywrite.mainText.split(" ");
+  const mainTextArray = mainText.split(" ");
 
   return (
     <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8">
@@ -81,7 +81,7 @@ function HeroTitles() {
           ease,
         }}
       >
-        {copywrite.subText}
+        {subText}
       </motion.p>
     </div>
   );

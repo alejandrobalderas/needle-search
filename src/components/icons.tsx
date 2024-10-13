@@ -6,10 +6,10 @@ type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
   siteIcon: (props: IconProps) => (
-    <>
+    <div className="flex flex-row gap-x-2">
       <Icons.logo className="h-[40px] w-auto" />
       <span className="text-xl font-bold">{siteConfig.name}</span>
-    </>
+    </div>
   ),
   logo: (props: IconProps) => <Syringe />,
   twitter: (props: IconProps) => (

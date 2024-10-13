@@ -39,8 +39,6 @@ export default function JobCard({
 
   const isFront = cardIds ? id === cardIds[cardIds.length - 1] : true;
 
-  console.log(cardIds, id, isFront);
-
   const rotate = useTransform(() => {
     const index = cardIds ? cardIds.indexOf(id) : -1;
     const offset = isFront ? 0 : index % 2 ? 6 : -6;

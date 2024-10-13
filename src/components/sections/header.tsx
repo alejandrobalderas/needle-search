@@ -49,7 +49,12 @@ export default function Header() {
           <div className="flex items-center">
             <nav className="mr-10">
               {/* <Menu /> */}
-              <Button variant={"ghost"}>Blog</Button>
+              <Link
+                href={"#blog"}
+                className={buttonVariants({ variant: "ghost" })}
+              >
+                Blog
+              </Link>
             </nav>
 
             <div className="flex gap-2">

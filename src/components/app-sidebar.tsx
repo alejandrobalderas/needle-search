@@ -40,7 +40,7 @@ const data = {
       url: "#",
       icon: SquareTerminal,
       isActive: true,
-      disabled: false,
+      disabled: true,
       items: [],
     },
     {
@@ -52,7 +52,7 @@ const data = {
       items: [
         {
           title: "Explore Jobs",
-          url: "#",
+          url: "/explore-jobs",
           isActive: false,
         },
         {

@@ -2,6 +2,7 @@ import { Icons } from "@/components/icons";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
+import { Brain, Shield, Zap, Sparkles, Upload } from "lucide-react";
 
 export const BLUR_FADE_DELAY = 0.15;
 
@@ -11,16 +12,97 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
   keywords: ["SaaS", "Template", "Next.js", "React", "Tailwind CSS"],
   links: {
-    email: "support@acme.ai",
+    email: "support@needle-search.ai",
     twitter: "https://twitter.com/magicuidesign",
     discord: "https://discord.gg/87p2vpsat5",
     github: "https://github.com/magicuidesign/magicui",
     instagram: "https://instagram.com/magicuidesign/",
   },
-  copywrite: {
-    mainText: "Find Your Perfect Job with AI-Powered Matching",
-    subText:
-      "Break free from tedious job searches. Let our AI connect you instantly with opportunities that truly fit your skills and ambitions.",
+  copyWrite: {
+    hero: {
+      mainText: "Find Your Perfect Job with AI-Powered Matching",
+      subText:
+        "Break free from tedious job searches. Let our AI connect you instantly with opportunities that truly fit your skills and ambitions.",
+    },
+    logos: {
+      title: "Join the Future of Hiring with People Working in",
+    },
+    problems: [
+      {
+        title: "Lengthy and Inefficient Hiring Processes",
+        description:
+          "Are you frustrated with lengthy hiring processes that drag on for weeks or even months? Tired of attending multiple rounds of interviews, answering the same questions over and over? Traditional recruitment wastes your valuable time and keeps you from seizing the opportunities you deserve.",
+        icon: Brain,
+      },
+      {
+        title: "Impersonal Matches and Poor Fit",
+        description:
+          "Do you feel like job offers don't truly align with your skills, values, or career aspirations? When recruiters focus only on your resume or LinkedIn profile, they miss what matters most to you—like your salary expectations, desired impact, collaboration style, and personal goals. This leads to mismatched roles that leave you unsatisfied and unfulfilled.",
+        icon: Zap,
+      },
+      {
+        title: "Lack of Control Over Your Personal Data",
+        description:
+          "Worried about who has access to your personal information? In traditional hiring processes, you often have little control over how your data is shared. Your details might be passed around without your consent, raising concerns about privacy and making you hesitant to engage fully in your job search.",
+        icon: Shield,
+      },
+    ],
+    solution: {
+      title: "Elevate Your Career with AI-Powered Matches",
+      description:
+        "Generic job platforms won't cut it. Our solution is purpose-built to deliver exceptional AI-driven job matches tailored to your unique skills, experience, and career aspirations.",
+      features: [
+        {
+          title: "Accelerate Your Job Search with AI-Powered Matching",
+          description:
+            "Let our AI instantly connect you with tech roles that match your skills and preferences. Skip the wait and repetitive interviews.",
+          className: "hover:bg-primary/10 transition-all duration-500 ease-out",
+          content: <></>,
+        },
+        {
+          title: "Personalized Matches That Reflect Your True Aspirations",
+          description:
+            "Find jobs that truly fit your aspirations, including your desired salary, impact, and values. Get matches that resonate with what you want.",
+          className: "hover:bg-primary/10 transition-all duration-500 ease-out",
+          content: <></>,
+        },
+        {
+          title: "Full Control Over Your Personal Data",
+          description:
+            "Your information stays with you. Share it only when you choose, keeping your privacy protected at all times.",
+          className: "hover:bg-primary/10 transition-all duration-500 ease-out",
+          content: <></>,
+        },
+      ],
+    },
+    howItWorks: {
+      steps: [
+        {
+          id: 1,
+          title: "1. Sign Up",
+          content:
+            "Create your account in seconds using your email or LinkedIn.",
+          image: "/needle-login.png",
+          icon: <Upload className="h-6 w-6 text-primary" />,
+        },
+        {
+          id: 2,
+          title: "2. Complete Your Profile",
+          content:
+            "Tell us about your skills, experience, and career goals. Set your preferences for salary, company culture, and values.",
+          image: "/needle-job-search.png",
+          icon: <Zap className="h-6 w-6 text-primary" />,
+        },
+        {
+          id: 3,
+          title: "3. Get Matched and Connect",
+          content:
+            "Receive instant AI-powered job matches tailored to you. Connect directly with hiring managers to schedule interviews.",
+          image: "/needle-job-search.png",
+          icon: <Sparkles className="h-6 w-6 text-primary" />,
+        },
+      ],
+    },
     cta: "Join the Future of Hiring",
   },
   header: [

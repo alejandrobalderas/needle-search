@@ -5,6 +5,8 @@ import { cn, constructMetadata } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
+import { ClerkProvider } from "@clerk/nextjs";
+
 export const metadata: Metadata = constructMetadata({});
 
 export const viewport: Viewport = {
@@ -21,26 +23,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://rsms.me/" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-      </head>
-      <body
-        className={cn(
-          "mx-auto min-h-screen w-full scroll-smooth bg-background antialiased",
-        )}
-      >
-        {/* <ThemeProvider
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <head>
+          <link rel="preconnect" href="https://rsms.me/" />
+          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        </head>
+        <body
+          className={cn(
+            "mx-auto min-h-screen w-full scroll-smooth bg-background antialiased",
+          )}
+        >
+          {/* <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem={false}
         > */}
-        {children}
-        {/* <ThemeToggle />
+          {children}
+          {/* <ThemeToggle />
           <TailwindIndicator />
         </ThemeProvider> */}
-      </body>
-    </html>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

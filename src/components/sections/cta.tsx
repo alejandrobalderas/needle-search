@@ -15,7 +15,7 @@ export default function CtaSection() {
       className="rounded-xl bg-primary/10 py-16"
     >
       <div className="flex w-full flex-col items-center justify-center space-y-4 pt-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-        <CTAButton showWaitingListModal={true} />
+        <CTAButton />
       </div>
     </Section>
   );
